@@ -540,16 +540,13 @@ input:checked+.slider:before {
     .calculator_container {
         height: calc(180vh - 56px);
     }
-
     .display_price {
         top: 8vh;
     }
-
     .display_price_inner {
         top: 17.5vh;
     }
 }
-
 @media (max-height:780px) and (max-width:700px){
     .display_price_inner {
         top: 15.5vh;
