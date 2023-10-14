@@ -3,6 +3,7 @@ import "./Calculator.css"
 import { BiRupee } from 'react-icons/bi';
 import { BsPercent } from 'react-icons/bs';
 import PopUp from './popup/Popup';
+import ParticleBackground from './ani/ani';
 
 function Calculator() {
     const [showProfit, setShowProfit] = useState(true);
@@ -17,6 +18,7 @@ function Calculator() {
     const [profitPercentage, setProfitPercentage] = useState(0);
     const [toggleGst, setToggleGst] = useState(true);
 
+    
     const calculateGST = (gst, pro, rate, display, totalGST, totalProfit, profitP) => {
 
         if (gstType) {
@@ -56,14 +58,18 @@ function Calculator() {
 
     return (
         <>
+        <ParticleBackground/>
+        
+        {/* <video src={videoBg} autoPlay loop muted/> */}
             <div className="calculator_container">
                 <div className="calculator_innercontainer">
                     <div className="calculator_inputs">
                         <div className="calculator_header">
-                            <h1>GST Calculator</h1>
+                            <h1>Free GST Calculator</h1>
                             <p>The easiest way for businesses to calculate their GST</p>
                         </div>
                         <div className="gst_option">
+                        
                             <>
                                 <input type="radio" id="exclusive" name="gst_type" value="exclusive"
                                     onChange={(e) => {
@@ -96,6 +102,7 @@ function Calculator() {
                             {showProfit ?
                                 <div className="show_profit">
                                     {/* {gstType ? */}
+
                                     <p onClick={() => {
                                         showProfit ? setShowProfit(false) : setShowProfit(true);
                                     }}>+ Add Profit Ratio</p><div></div>
@@ -222,7 +229,9 @@ function Calculator() {
                     </div>
                 </div>
             </PopUp>
+           
         </>
+        
     )
 }
 

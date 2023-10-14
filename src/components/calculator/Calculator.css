@@ -1,10 +1,16 @@
 /* Css */
+
 .calculator_container {
-    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10rem;
     align-items: center;
     justify-content: center;
     height: calc(100vh - 56px);
+    display: flex;
 }
+
 
 .calculator_innercontainer {
     display: flex;
@@ -43,13 +49,13 @@
     margin: 0px;
     font-size: 40px;
     line-height: 48px;
-    color: #29a80d;
+    color: #edeff5;
 }
 
 .calculator_header p {
     font-size: 18px;
     line-height: 28px;
-    color: #515978;
+    color: #5b7cea;
 }
 
 .gst_option {
@@ -58,7 +64,8 @@
     justify-content: center;
     font-size: 18px;
     line-height: 28px;
-    color: #29a80d;
+    color: #c90cb6;
+    margin-top: -30px;
     font-weight: 500;
 
 }
@@ -66,6 +73,7 @@
 
 #inclusive {
     margin-left: 2.2vh;
+    color: #FCC40A;
 }
 
 #inclusive:hover, #exclusive:hover {
@@ -78,18 +86,19 @@
     flex-direction: column;
     align-items: flex-start;
     width: 80%;
+    
 }
 
 .calculator_takeinputs p {
     margin: 0;
-    color: #515978;
+    color: #e2e5f1;
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 2.3vh;
 }
 
 .calculator_takeinputs span {
-    color: #505050;
+    color: #FCC40A;
     font-weight: 600;
     margin: 0;
 }
@@ -110,7 +119,7 @@
 }
 
 .takeinput:hover {
-    box-shadow: 0 0 12px #235806;
+    box-shadow:  15px 0 30px #980a93;
 }
 
 .takeinput input {
@@ -156,7 +165,8 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
     font-size: 20px;
     line-height: 32px;
-    color:  #505050;
+    color: #5b7cea;
+    margin-top: -30px;
 }
 
 
@@ -169,7 +179,7 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
 }
 .image_holder:hover {
-    box-shadow: 2px 2px 0  #406d29;
+    box-shadow:  5px 0 12px #980a93;
 }
 
 .display_price_inner {
@@ -202,7 +212,7 @@ input::-webkit-inner-spin-button {
 
 .get_table p {
     margin: 0;
-    color: #ebf7ecd2;
+    color: #324da3;
     font-size: 16px;
     line-height: 48px;
     font-weight: bold;
@@ -221,7 +231,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
     cursor: pointer;
     border: none;
-    margin-right: 2vh;
+    margin-right: 3vh;
     font-size: 20px;
     color: #505050;
     border: 1px solid #d7d6d6cc;
@@ -238,27 +248,32 @@ input::-webkit-inner-spin-button {
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
-    margin-right: 2vh;
+    margin-right: 3vh;
     font-size: 20px;
 }
 .button_inactive:hover {
     color: #29a80d;
-    box-shadow: 0 0 12px #235806;
+    box-shadow: 10px 0 20px #980a93;
 }
 .total_profit {
     position: relative;
     left: 5vw;
     bottom: 1vw;
     font-size: 24px;
-    color: #515978; 
+    top: .5vw;
+    font-weight: 500;
+    color: #235806;
+
 }
 
 .total_gst {
     position: relative;
-    right: 3vw;
+    right: 5vw;
     bottom: 1vw;
+    top: .5vw;
     font-size: 24px;
-    color: #515978;
+    font-weight: 500;
+    color: #235806;
 }
 
 .popup_inner {
@@ -280,13 +295,13 @@ input::-webkit-inner-spin-button {
 .popup_header h2 {
     font-size: 24px;
     line-height: 32px;
-    color: #29a80d;
+    color: #324da3;
     line-height: 32px;
 }
 
 .popup_header p {
     font-size: 24px;
-    color: #515978;
+color: #9b1616; 
     cursor: pointer;
     line-height: 1.6;
     font-weight: 600;
@@ -335,13 +350,13 @@ input::-webkit-inner-spin-button {
 .popup_total p {
     font-weight: 700;
     font-size: 16px;
-    color: #505050;
+    color: #f11313;
     margin-left: 3vh;
 }
 
 .popup_total span {
     font-size: 20px;
-    color:  #9b1616;
+    color: #29a80d;
     font-weight: 700;
     margin-right: 3vh;
 }
@@ -412,7 +427,7 @@ input::-webkit-inner-spin-button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #9b1616;
+    background-color:#980a93;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -452,6 +467,7 @@ input:checked+.slider:before {
 }
 
 @media (max-width:700px) {
+    
     .calculator_innercontainer {
         flex-direction: column;
     }
@@ -471,22 +487,53 @@ input:checked+.slider:before {
 
     .calculator_header h1 {
         font-size: 30px;
+        color: #21f32f;
+        margin-top: 8rem;
     }
-
+    
+    .calculator_header p {
+        color: #e2e5f1;
+    }
+    .gst_option {
+        color: #980a93;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .show_profit p span {
+        color: #324da3;
+        font-weight: 400;
+    }
+    .calculator_rates p span{
+        color: #29a80d;
+        margin-left: 100px;
+        font-weight: 600;
+    }
+    
     .button_inactive {
         height: 55px;
         width: 55px;
-        margin-right: 1vh;
+        margin-right:2vh;
         font-size: 15px;
     }
 
     .button_active {
-        margin-right: 1vh;
+        margin-right: 2vh;
         height: 55px;
         width: 55px;
         font-size: 15px;
+        margin-bottom: 20px;
     }
-
+    .button_inactive:hover {
+        color: #29a80d;
+        box-shadow: 24px 0 24px #324da3;
+    }
+    .calculator_takeinputs p span {
+        color: #324da3;
+        font-weight: 600;
+    }
+    .takeinput:hover {
+        box-shadow: 0 0 24px #324da3;
+    }
     .calculator_container {
         height: calc(142vh - 56px);
     }
@@ -537,6 +584,8 @@ input:checked+.slider:before {
 }
 
 @media (max-width:380px) {
+    
+    
     .calculator_container {
         height: calc(180vh - 56px);
     }
