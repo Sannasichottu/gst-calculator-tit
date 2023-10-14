@@ -18,6 +18,8 @@
     justify-content: center;
     width: 78%;
     height: 90%;
+    
+        margin-bottom: 10rem;
 }
 
 .calculator_inputs {
@@ -67,6 +69,7 @@
     color: #c90cb6;
     margin-top: -30px;
     font-weight: 500;
+    gap: 5px;
 
 }
 

@@ -13,7 +13,7 @@
 } */
 
 h1 {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -25,11 +25,6 @@ h1 {
     font-weight: 600;
     color:chartreuse;
 }
-h1 span {
-    color:chartreuse;
-    margin-right: 10px;
-}
-
 @media (max-width:700px) { 
 
     h1 {
