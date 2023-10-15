@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 .navbar_container{
-    background-color: #104548;
+    background-color: #46237A;
     padding: 1px 0;
     border-radius: 3px;
+    box-shadow: 0 0 8px #3DDC97;
 
 }
 /* .navbar_container img {
@@ -13,8 +14,8 @@
 } */
 
 h1 {
+    color:#FCFCFC;  
     margin-top: 10px;
-    color: #fff;
     text-decoration: none;
     text-align: center;
     -webkit-transition: .3s all ease-in-out;
@@ -23,12 +24,12 @@ h1 {
     font-family: 'Tilt Neon', sans-serif;
     font-size: 50px;
     font-weight: 600;
-    color:chartreuse;
+    
 }
 @media (max-width:700px) { 
 
     h1 {
-        color: #fff;
+        color: pink;
         font-size: 24px;
     }
 }

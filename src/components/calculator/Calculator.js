@@ -4,6 +4,7 @@ import { BiRupee } from 'react-icons/bi';
 import { BsPercent } from 'react-icons/bs';
 import PopUp from './popup/Popup';
 import ParticleBackground from './ani/ani';
+// import ParticleBackground1 from './ani/backTheme';
 
 function Calculator() {
     const [showProfit, setShowProfit] = useState(true);
@@ -58,7 +59,8 @@ function Calculator() {
 
     return (
         <>
-        <ParticleBackground/>
+        <ParticleBackground className="bgtheme"/>
+        {/* <ParticleBackground1/> */}
         
         {/* <video src={videoBg} autoPlay loop muted/> */}
             <div className="calculator_container">

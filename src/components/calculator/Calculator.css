@@ -1,4 +1,7 @@
 /* Css */
+.bgtheme{
+    display: none;
+}
 
 .calculator_container {
     position: absolute;
@@ -51,13 +54,13 @@
     margin: 0px;
     font-size: 40px;
     line-height: 48px;
-    color: #edeff5;
+    color: #256EFF;
 }
 
 .calculator_header p {
     font-size: 18px;
     line-height: 28px;
-    color: #5b7cea;
+    color: #3DDC97;
 }
 
 .gst_option {
@@ -66,7 +69,7 @@
     justify-content: center;
     font-size: 18px;
     line-height: 28px;
-    color: #c90cb6;
+    color: #FF495C;
     margin-top: -30px;
     font-weight: 500;
     gap: 5px;
@@ -76,11 +79,11 @@
 
 #inclusive {
     margin-left: 2.2vh;
-    color: #FCC40A;
+    color: #3649BD;
 }
 
 #inclusive:hover, #exclusive:hover {
-    box-shadow: 0 0 12px #235806;
+    box-shadow: 0 0 12px #FF495C;
 }
 
 .calculator_takeinputs {
@@ -94,14 +97,14 @@
 
 .calculator_takeinputs p {
     margin: 0;
-    color: #e2e5f1;
+    color: red;
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 2.3vh;
 }
 
 .calculator_takeinputs span {
-    color: #FCC40A;
+    color: #FCFCFC;
     font-weight: 600;
     margin: 0;
 }
@@ -111,22 +114,22 @@
     align-items: center;
     justify-content: space-evenly;
     height: 64px;
-    background-color: #fff;
-    border: 1px solid #aee392;
+    background-color:#fcfcfc;
+
     box-shadow: 0 0 12px rgb(0 0 0 / 6%);
     width: 95%;
-    color: #FCC40A;
+    color: #FF495C;
     font-size: 24px;
     border-radius: 4px;
     padding: 1px;
 }
 
 .takeinput:hover {
-    box-shadow:  15px 0 30px #980a93;
+    border: 2px solid #FF495C;
 }
 
 .takeinput input {
-    color: #505050;
+    color: #46237A;
     width: 90%;
     height: 60px;
     width: 85%;
@@ -150,7 +153,7 @@ input::-webkit-inner-spin-button {
 }
 
 .show_profit p {
-    color: #FCC40A;
+    color: #FCFCFC;
     font-size: 16px;
     line-height: 48px;
     font-weight: 600;
@@ -168,7 +171,7 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
     font-size: 20px;
     line-height: 32px;
-    color: #5b7cea;
+    color: #FF495C;
     margin-top: -30px;
 }
 
@@ -176,13 +179,12 @@ input::-webkit-inner-spin-button {
 .image_holder {
     display: flex;
     background-image: url('./calculatorimage.png');
-
     height: 440px;
     width: 450px;
     flex-direction: column;
 }
 .image_holder:hover {
-    box-shadow:  5px 0 12px #980a93;
+    box-shadow:  3px 0 5px #3DDC97;
 }
 
 .display_price_inner {
@@ -200,7 +202,7 @@ input::-webkit-inner-spin-button {
     position: relative;
     font-size: 54px;
     font-weight: 700;
-    color: #29a80d;
+    color: #FF495C;
     top: 13vh;
 }
 
@@ -215,7 +217,7 @@ input::-webkit-inner-spin-button {
 
 .get_table p {
     margin: 0;
-    color: #324da3;
+    color: #FF495C;
     font-size: 16px;
     line-height: 48px;
     font-weight: bold;
@@ -228,25 +230,26 @@ input::-webkit-inner-spin-button {
 .button_inactive {
     height: 64px;
     width: 84px;
-    background: #fff;
-    box-shadow: 0 0 12px rgb(0 0 0 / 6%);
+    background: #FCFCFC;
+    box-shadow: 0 0 12px rgb(66, 128, 137);
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
     border: none;
     margin-right: 3vh;
     font-size: 20px;
-    color: #505050;
-    border: 1px solid #d7d6d6cc;
+    font-weight: 400;
+    color: #428089;
+    border: 2px solid #3649BD;
 }
 
 .button_active {
     height: 64px;
     width: 84px;
-    background: #fff;
-    border: 1px solid #aee392;
+    background: #46237A;
+    border: 1px solid #3DDC97;
     font-weight: 800;
-    color: #29a80d;
+    color: #FCFCFC;
     box-shadow: 0 0 12px #235806;
     border-radius: 4px;
     text-align: center;
@@ -255,8 +258,9 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
 }
 .button_inactive:hover {
-    color: #29a80d;
-    box-shadow: 10px 0 20px #980a93;
+    color: #46237A;
+    border: 2px dashed #FF495C;
+    font-weight: 600;
 }
 .total_profit {
     position: relative;
@@ -264,8 +268,8 @@ input::-webkit-inner-spin-button {
     bottom: 1vw;
     font-size: 24px;
     top: .5vw;
-    font-weight: 500;
-    color: #235806;
+    font-weight: 600;
+    color: #46237A;
 
 }
 
@@ -274,9 +278,8 @@ input::-webkit-inner-spin-button {
     right: 5vw;
     bottom: 1vw;
     top: .5vw;
-    font-size: 24px;
-    font-weight: 500;
-    color: #235806;
+    font-size: 24px;    font-weight: 600;
+    color: #46237A;
 }
 
 .popup_inner {
@@ -286,6 +289,8 @@ input::-webkit-inner-spin-button {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    background-color: #FFF8F0;
+    border-radius: 10px;
 }
 
 .popup_header {
@@ -298,13 +303,13 @@ input::-webkit-inner-spin-button {
 .popup_header h2 {
     font-size: 24px;
     line-height: 32px;
-    color: #324da3;
+    color: #2A0C4E;
     line-height: 32px;
 }
 
 .popup_header p {
     font-size: 24px;
-color: #9b1616; 
+color: #9E2B25; 
     cursor: pointer;
     line-height: 1.6;
     font-weight: 600;
@@ -329,13 +334,14 @@ color: #9b1616;
 .popup_value p {
     margin: 0;
     font-size: 16px;
-    color: #505050;
+    color: #51355A;
+    
 }
 
 .popup_value span {
     margin: 0;
     font-size: 16px;
-    color: #505050;
+    color: #51355A;
     font-weight: 700;
 }
 
@@ -345,7 +351,7 @@ color: #9b1616;
     justify-content: space-between;
     width: 100%;
     height: 20%;
-    background-color: #f3fef8;
+    background-color: #51355A;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -353,13 +359,13 @@ color: #9b1616;
 .popup_total p {
     font-weight: 700;
     font-size: 16px;
-    color: #f11313;
+    color: #FFF8F0;
     margin-left: 3vh;
 }
 
 .popup_total span {
     font-size: 20px;
-    color: #29a80d;
+    color: #F5F8DE;
     font-weight: 700;
     margin-right: 3vh;
 }
@@ -378,7 +384,7 @@ color: #9b1616;
 
 .popup_value2 p {
     font-weight: 700;
-    color:#29a80d;
+    color:#2A0C4E;
 }
 
 .popup_value3 {
@@ -394,18 +400,18 @@ color: #9b1616;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #f4fef3;
+    background-color: #F5F8DE;
 }
 
 .popup_igst p {
     font-size: 16px;
-    color: #505050;
+    color: #2A0C4E;
     margin-left: 3vh;
 }
 
 .popup_igst label {
     font-size: 16px;
-    color: #505050;
+    color: #2A0C4E;
     margin-right: 3vh;
 }
 
@@ -430,7 +436,7 @@ color: #9b1616;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:#980a93;
+    background-color:#9E2B25;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -442,13 +448,13 @@ color: #9b1616;
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: rgb(255, 255, 255);
+    background-color: #F5F8DE;
     -webkit-transition: .4s;
     transition: .4s;
 }
 
 input:checked+.slider {
-    background-color: #21f32f;
+    background-color: #2A0C4E;
 }
 
 input:focus+.slider {
@@ -470,7 +476,7 @@ input:checked+.slider:before {
 }
 
 @media (max-width:700px) {
-    
+
     .calculator_innercontainer {
         flex-direction: column;
         margin-bottom: 15rem;
