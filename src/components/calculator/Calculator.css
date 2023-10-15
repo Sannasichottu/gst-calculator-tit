@@ -497,24 +497,24 @@ input:checked+.slider:before {
 
     .calculator_header h1 {
         font-size: 30px;
-        color:#505fe6;
+        color:#256EFF;
         margin-left: 10%;
     }
     .calculator_header p {
-        color: #e2e5f1;
+        color: #3DDC97;
     }
     .gst_option {
-        color: #980a93;
+        color: #FF495C;
         margin-top: 5px;
         margin-bottom: 20px;
         gap: 5px;
     }
     .show_profit p span {
-        color: #324da3;
+        color: #FF495C;
         font-weight: 400;
     }
     .calculator_rates p span{
-        color: #29a80d;
+        color: #FF495C;
         margin-left: 100px;
         font-weight: 600;
     }
@@ -538,7 +538,7 @@ input:checked+.slider:before {
         box-shadow: 24px 0 24px #324da3;
     }
     .calculator_takeinputs p span {
-        color: #FCC40A;
+        color: #FCFCFC;
         font-weight: 600;
     }
     .takeinput:hover {
