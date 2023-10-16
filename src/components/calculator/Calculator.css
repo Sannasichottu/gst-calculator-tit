@@ -600,7 +600,7 @@ input:checked+.slider:before {
         height: calc(180vh - 56px);
     }
     .display_price {
-        top: 8vh;
+        top: 8vh;   
     }
     .display_price_inner {
         top: 17.5vh;

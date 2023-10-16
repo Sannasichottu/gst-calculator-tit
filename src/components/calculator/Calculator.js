@@ -3,7 +3,7 @@ import "./Calculator.css"
 import { BiRupee } from 'react-icons/bi';
 import { BsPercent } from 'react-icons/bs';
 import PopUp from './popup/Popup';
-import ParticleBackground from './ani/ani';
+// import ParticleBackground from './ani/ani';
 // import ParticleBackground1 from './ani/backTheme';
 
 function Calculator() {
@@ -59,7 +59,7 @@ function Calculator() {
 
     return (
         <>
-        <ParticleBackground className="bgtheme"/>
+        {/* <ParticleBackground className="bgtheme"/> */}
         {/* <ParticleBackground1/> */}
         
         {/* <video src={videoBg} autoPlay loop muted/> */}
